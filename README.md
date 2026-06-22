@@ -1,8 +1,12 @@
 # Read Sync
+A self-hosted sync infrastructure for reading progress.
 
-A simple systemd service file generator for read-sync.
+## Features
+* No user registration required for initial setup
+* All data remains stored locally until explicitly synced
+* User can choose to host sync server or use default instance
+* Data encryption at rest and in transit is implemented
 
 ## Usage
-
-1. Install the package using pip: `pip install .`
-2. Run the script using: `python -m systemd_service --name read-sync --description "Read sync service" --executable /usr/bin/read-sync --log_file /var/log/read-sync/daemon.log`
+1. Run `python -m pytest` to run the tests.
+2. Run `python src/read_sync.py` to use the read sync infrastructure.
